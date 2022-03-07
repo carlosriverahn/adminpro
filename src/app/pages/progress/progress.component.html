@@ -1,1 +1,64 @@
-<p>progress works!</p>
+<!-- ============================================================== -->
+<!-- Start Page Content -->
+<!-- ============================================================== -->
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Striped Progress bar</h4>
+        <div class="progress m-t-20">
+          <div
+          class="progress-bar bg-info progress-bar-striped active"
+          style="height: 10px"
+          [style.width]="getPorcent1"
+          role="progressbar"
+            >
+            <span class="sr-only">85% Complete (success)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Striped Progress bar</h4>
+        <div class="progress m-t-20">
+          <div
+          class="progress-bar bg-info progress-bar-striped active"
+          style="height: 10px"
+          [style.width]="getPorcent2"
+            role="progressbar"
+            >
+            <span class="sr-only">85% Complete (success)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <app-increase (changeValueEmit)="progress1 = $event" [progress]="progress1"></app-increase>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <app-increase (changeValueEmit)="progress2 = $event" [progress]="progress2"></app-increase>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ============================================================== -->
+<!-- End PAge Content -->
+<!-- ============================================================== -->
