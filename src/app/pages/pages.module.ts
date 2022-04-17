@@ -12,6 +12,8 @@ import { NotpagefoundComponent } from './nopagefound/nopagefound.component';
 import { ProgressComponent } from './progress/progress.component';
 import { ComponentsModule } from '../components/components.module';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { PromisesComponent } from './promises/promises.component';
+import { RjxsComponent } from './rjxs/rjxs.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
     DashboardComponent,
     ProgressComponent,
     NotpagefoundComponent,
-    AccountSettingsComponent
+    AccountSettingsComponent,
+    PromisesComponent,
+    RjxsComponent
   ],
   exports: [
     PagesComponent,

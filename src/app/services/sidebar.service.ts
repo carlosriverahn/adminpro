@@ -9,8 +9,10 @@ export class SidebarService {
 
   public subMenus: SubMenu[] =  [
     {title: 'Main', url: '/dashboard'},
+    {title: 'Graphics', url: 'graphics1'},
+    {title: 'rxjs', url: 'rxjs'},
+    {title: 'Promises', url: 'promises'},
     {title: 'ProgressBar', url: 'progress'},
-    {title: 'Graphics', url: 'graphics1'}
   ]
 
   public menuItems: MenuItems[] = [
